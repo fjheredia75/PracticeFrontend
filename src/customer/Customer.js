@@ -1,8 +1,10 @@
 
-import './App3.css';
-
 import { Button, Form, Input, Popconfirm, Table } from 'antd';
 import React, { useContext, useEffect, useRef, useState } from 'react';
+import style from './style.module.css';
+
+console.log(style)
+
 const EditableContext = React.createContext(null);
 const EditableRow = ({ index, ...props }) => {
   const [form] = Form.useForm();
@@ -170,11 +172,11 @@ const App = () => {
   return (
     <div>
       <Button
-        onClick={handleAdd}
-        type="primary"
-        style={{
-          marginBottom: 16,
-        }}
+       onClick={handleAdd}
+       type="primary"
+       style={{
+         marginBottom: 16,
+       }}
       >
         Add a row
       </Button>

@@ -1,8 +1,11 @@
 
-import './App4.css';
-
 import { Button, Form, Input, Popconfirm, Table } from 'antd';
 import React, { useContext, useEffect, useRef, useState } from 'react';
+import style from './style.module.css';
+
+console.log(style)
+
+
 const EditableContext = React.createContext(null);
 const EditableRow = ({ index, ...props }) => {
   const [form] = Form.useForm();
